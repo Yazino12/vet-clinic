@@ -41,7 +41,7 @@ CREATE TABLE visits(
 	CONSTRAINT fk_vetsJoinA FOREIGN KEY (vets_id) REFERENCES vets(id)
 );
 
-
+ALTER TABLE visits ADD date_of_visit date;
 
 
 
