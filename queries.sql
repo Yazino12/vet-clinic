@@ -56,6 +56,43 @@ WHERE owners.full_name = 'Dean Winchester' AND animals.escape_attempts = 0;
 select owners.full_name, count(animals.owner_id) FROM owners JOIN animals ON owners.id = animals.owner_id 
 GROUP BY owners.full_name ORDER BY count(animals.owner_id) DESC LIMIT 1;
 
+SELECT animals.name, MIN(visits.date_of_visit) AS last FROM visits JOIN animals ON visits.animals_id = animals.id 
+JOIN vets ON visits.vets_id = vets.id WHERE vets.name = 'William Tatcher' GROUP BY animals.name ORDER BY last DESC LIMIT 1;
+SELECT COUNT(animals.name) FROM animals JOIN visits ON animals.id = visits.animals_id 
+JOIN vets ON vets.id = visits.vets_id WHERE vets.name = 'Stephanie Mendez';
+SELECT vets.name,species.name AS specialties FROM specializations S 
+JOIN species ON S.species_id = species.id FULL JOIN vets ON S.vets_id = vets.id;
+SELECT animals.name FROM visits JOIN animals ON visits.animals_id = animals.id 
+JOIN vets ON visits.vets_id = vets.id 
+WHERE vets.name = 'Stephanie Mendez' AND date_of_visit BETWEEN 'April 1, 2020' AND 'August 30, 2020';
+SELECT name, COUNT(name) AS visits FROM visits 
+JOIN animals ON visits.animals_id = animals.id GROUP BY name ORDER BY visits DESC LIMIT 1;
+SELECT animals.name, MIN(visits.date_of_visit) AS first FROM visits JOIN animals ON visits.animals_id = animals.id 
+JOIN vets ON visits.vets_id = vets.id WHERE vets.name = 'Maisy Smith' GROUP BY animals.name ORDER BY first LIMIT 1;
+SELECT animals, vets, visits.date_of_visit FROM visits JOIN animals ON visits.animals_id = animals.id 
+JOIN vets ON visits.vets_id = vets.id GROUP BY animals,vets,visits.date_of_visit ORDER BY visits.date_of_visit DESC LIMIT 1;
+SELECT vets.name, COUNT(*) FROM visits JOIN vets ON vets.id = visits.vets_id WHERE vets.id = 2 GROUP BY vets.name;
+SELECT species.name, COUNT(visits.animals_id) FROM visits JOIN vets ON visits.vets_id = vets.id 
+FULL JOIN animals ON visits.animals_id = animals.id JOIN species  ON species.id = animals.species_id 
+WHERE vets.id = 2 GROUP BY species.name;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
