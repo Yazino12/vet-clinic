@@ -75,35 +75,3 @@ SELECT vets.name, COUNT(*) FROM visits JOIN vets ON vets.id = visits.vets_id WHE
 SELECT species.name, COUNT(visits.animals_id) FROM visits JOIN vets ON visits.vets_id = vets.id 
 FULL JOIN animals ON visits.animals_id = animals.id JOIN species  ON species.id = animals.species_id 
 WHERE vets.id = 2 GROUP BY species.name;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
