@@ -41,22 +41,12 @@ CREATE TABLE visits(
 	CONSTRAINT fk_vetsJoinA FOREIGN KEY (vets_id) REFERENCES vets(id)
 );
 
+ALTER TABLE owners ADD COLUMN email VARCHAR(120); 
+
 ALTER TABLE visits ADD date_of_visit date;
 
 CREATE INDEX visits_animals_id ON visits(animals_id ASC);
 
 CREATE INDEX owners_email ON owners(email DESC);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+CREATE INDEX visits_vets_id ON visits(visit_id);
