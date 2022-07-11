@@ -43,7 +43,7 @@ CREATE TABLE visits(
 
 ALTER TABLE visits ADD date_of_visit date;
 
-
+CREATE INDEX visits_animals_id ON visits(animals_id ASC);
 
 
 
