@@ -2,6 +2,7 @@
 
 > This repository contains relational database with data about: animals, animals' owners, clinic employees, visits to create the data structure for a vet clinic.
 
+<img src="https://github.com/Yazino12/vet-clinic/blob/dev/Database-Schema.png?raw=true" width="1000" height="400">
 
 ## Getting Started
 
