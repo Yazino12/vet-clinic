@@ -19,6 +19,10 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 GitHub: [@Yazino12](https://github.com/Yazino12)
 
+👤 **Christian Biringanine**
+
+GitHub: [@christianbiring1](https://github.com/christianbiring1)
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
