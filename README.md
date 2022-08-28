@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/-Yazino12-yellow)
+
 # Vet Clinic Database
 
 > This repository contains relational database with data about: animals, animals' owners, clinic employees, visits to create the data structure for a vet clinic.
@@ -17,7 +19,9 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 👤 **Yasin Warsame**
 
-GitHub: [@Yazino12](https://github.com/Yazino12)
+- GitHub: [@Yazino12](https://github.com/Yazino12)
+- Twitter: [@yasino24](https://twitter.com/yasino24)
+- LinkedIn: [yasin-warsame](https://linkedin.com/in/yasin-warsame-a4176217a)
 
 ## Contributors
 
